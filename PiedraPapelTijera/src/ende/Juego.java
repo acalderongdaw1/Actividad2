@@ -84,8 +84,8 @@ class Jugador{
     public String opcionAlAzar()
     {
         String opcion="";
-        Integer c = (int)(Math.random()*3);
-        switch(c){
+        Integer num = (int)(Math.random()*3);
+        switch(num){
             case 0:
             	opcion=("piedra");
                 break;
