@@ -15,10 +15,10 @@ public class Juego
         Jugador p1 = new Jugador();
         Jugador p2 = new Jugador();
         boolean finDeJuego = false;  
-        Integer rondasJugadas = 0;
-        Integer exitosJugador1 = p1.exitos;
-        Integer exitosJugador2 = p2.exitos;
-        Integer empates = 0;
+        int rondasJugadas = 0;
+        int exitosJugador1 = p1.exitos;
+        int exitosJugador2 = p2.exitos;
+        int empates = 0;
         
         // Bucle de juego
         do {
@@ -78,7 +78,7 @@ class Jugador{
     public String opcionAlAzar()
     {
         String opcion = "";
-        Integer num = (int)(Math.random() * 3);
+        int num = (int)(Math.random() * 3);
         switch(num){
             case 0:
             	opcion = ("piedra");
