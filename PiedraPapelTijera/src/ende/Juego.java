@@ -75,8 +75,7 @@ class Jugador{
     /**
      * Escoge piedra, papel o tijera al azar
      */
-    public String opcionAlAzar()
-    {
+    public String opcionAlAzar() {
         String opcion = "";
         int num = (int)(Math.random() * 3);
         switch(num){
@@ -88,15 +87,16 @@ class Jugador{
                 break;
             case 2:
             	opcion = ("tijeras");
+            	break;
+            default:
+            	break;
         }
         return opcion;
     }
-    public void setExitos() 
-    {
+    public void setExitos() {
         exitos++;
     }
-    public int getExitos() 
-    {
+    public int getExitos() {
         return(exitos);
     }
     
