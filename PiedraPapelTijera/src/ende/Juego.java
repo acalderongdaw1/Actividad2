@@ -16,7 +16,8 @@ public class Juego
         Integer exitosJugador1=p1.exitos;
         Integer exitosJugador2=p2.exitos;
         Integer empates = 0;
-        String opcionJugador1, opcionJugador2;
+        String opcionJugador1;
+        String opcionJugador2;
         
         // Bucle de juego
         do
