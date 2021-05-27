@@ -9,8 +9,11 @@ public class Juego
 {
     public static void main(String args[])
     {
-    	final String j1Gana = "Jugador 1 GANA";
-    	final String j2Gana = "Jugador 2 GANA";
+    	final String J1GANA = "Jugador 1 GANA";
+    	final String J2GANA = "Jugador 2 GANA";
+    	final String PIEDRA = "piedra";
+    	final String PAPEL = "papel";
+    	final String TIJERAS = "tijera";
     	
         Jugador p1 = new Jugador();
         Jugador p2 = new Jugador();
@@ -34,25 +37,25 @@ public class Juego
                 exitosJugador2 = ++p2.exitos;
                 
             }
-            else if((opcionJugador1.equals("papel")) && (opcionJugador2.equals("piedra"))) {
+            else if((opcionJugador1.equals(PAPEL)) && (opcionJugador2.equals(PIEDRA))) {
             	exitosJugador1 = ++p1.exitos;
-                System.out.println(j1Gana);
+                System.out.println(J1GANA);
             }
-            else if((opcionJugador1.equals("piedra")) && (opcionJugador2.equals("tijeras"))) {
+            else if((opcionJugador1.equals(PIEDRA)) && (opcionJugador2.equals(TIJERAS))) {
             	exitosJugador1 = ++p1.exitos;
-                System.out.println(j1Gana);
+                System.out.println(J1GANA);
             }
-            else if((opcionJugador1.equals("tijeras")) && (opcionJugador2.equals("piedra"))) {
+            else if((opcionJugador1.equals(TIJERAS)) && (opcionJugador2.equals(PIEDRA))) {
             	exitosJugador2 = ++p2.exitos;
-                System.out.println(j2Gana);
+                System.out.println(J2GANA);
             }
-            else if((opcionJugador1.equals("tijeras")) && (opcionJugador2.equals("papel"))) {
+            else if((opcionJugador1.equals(TIJERAS)) && (opcionJugador2.equals(PAPEL))) {
             	exitosJugador1 = ++p1.exitos;
-                System.out.println(j1Gana);
+                System.out.println(J1GANA);
             }
-            else if((opcionJugador1.equals("papel")) && (opcionJugador2.equals("tijeras"))) {
+            else if((opcionJugador1.equals(PAPEL)) && (opcionJugador2.equals(TIJERAS))) {
             	exitosJugador2 = ++p2.exitos;
-                System.out.println(j2Gana);
+                System.out.println(J2GANA);
             }
             if(opcionJugador1 == opcionJugador2) {
             	empates++;
